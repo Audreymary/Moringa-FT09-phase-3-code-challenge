@@ -1,6 +1,6 @@
 import sqlite3
 
-
+# Specify the database file location
 DATABASE_NAME = './database/magazine.db'
 
 class Connection:
@@ -11,5 +11,5 @@ class Connection:
         Configures the connection to return rows as dictionaries.
         """
         conn = sqlite3.connect(DATABASE_NAME)
-        conn.row_factory = sqlite3.Row  
+        conn.row_factory = sqlite3.Row  # Allows accessing columns by name
         return conn

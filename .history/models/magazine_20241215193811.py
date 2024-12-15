@@ -5,7 +5,7 @@ class Magazine:
         if not isinstance(name, str) or not (2 <= len(name) <= 16):
             raise ValueError("Name must be a string between 2 and 16 characters.")
         
-        self._id = id  
+        self._id = id  # Directly assign id
         self._name = name
 
     @property
