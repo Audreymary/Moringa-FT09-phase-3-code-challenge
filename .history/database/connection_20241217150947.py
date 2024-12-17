@@ -1,6 +1,6 @@
 import sqlite3
+from
 
-# Specify the database file location
 DATABASE_NAME = './database/magazine.db'
 
 class Connection:
